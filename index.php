@@ -26,7 +26,7 @@
 			<div class="menu-content">
 				<ul>
 					<li>
-						<a href="branches/jesussify.html" target="new"> Load Jesussify
+						<a href="branches/jesussify.html" target="new"> USER
 						</a>
 					</li>
 				</ul>
@@ -35,11 +35,11 @@
 		<br>
 		<div class="collapsible-menu">
 			<input type="checkbox" id="Minijuegos_jesus">
-			<label for="Minijuegos_jesus"> Minijuegos.jesus </label>
+			<label for="Minijuegos_jesus"> Contraseña </label>
 			<div class="menu-content">
 				<ul>
 					<li>
-						<a href="branches/minjuegos_jesus.html" target="new"> Load Minijuegos.jesus
+						<a href="branches/minjuegos_jesus.html" target="new"> PASSS
 						</a>
 					</li>
 				</ul>
