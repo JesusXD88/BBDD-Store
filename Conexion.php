@@ -16,7 +16,7 @@ if ($conn->connect_error) {
   $con = die("Connection failed: " . $conn->connect_error);
   $con;
 }
-$con = "Connected successfully";
+$con = "Conectado con exito";
 
 
 ?> 

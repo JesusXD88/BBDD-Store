@@ -19,35 +19,26 @@
 		<br>
 		<br>
 	</div>
-	<div id="id2">
-		<div class="collapsible-menu">
-			<input type="checkbox" id="Jesussify">
-			<label for="Jesussify"> Usuario </label>
-			<div class="menu-content">
-				<ul>
-					<li>
-						<a href="branches/jesussify.html" target="new"> USER
-						</a>
-					</li>
-				</ul>
-			</div>
+	<div>
+		<div>
+            <form action="" method="post" name="login">
+                <div class="form-element">
+                    <label>Usuario</label>
+                    <input type="text" name="login_user" pattern="[a-zA-Z0-9]+" required />
+                </div>
+                <div class="form-element">
+                    <label>Contraseña</label>
+                    <input type="password" name="login_password" required />
+                </div>
+                <button type="submit" name="login_submit" value="login">Iniciar sesion</button>
+            </form>
 		</div>
-		<br>
-		<div class="collapsible-menu">
-			<input type="checkbox" id="Minijuegos_jesus">
-			<label for="Minijuegos_jesus"> Contraseña </label>
-			<div class="menu-content">
-				<ul>
-					<li>
-						<a href="branches/minjuegos_jesus.html" target="new"> PASSS
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<br>
 	</div>
 	<br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
