@@ -1,3 +1,6 @@
+<?php
+    include('branches/Login.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,16 +24,17 @@
 	</div>
 	<div>
 		<div>
-            <form action="" method="post" name="login">
+            <form action="" method="post" name="signin-form">
                 <div class="form-element">
                     <label>Usuario</label>
-                    <input type="text" name="login_user" pattern="[a-zA-Z0-9]+" required />
+                    <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
                 </div>
                 <div class="form-element">
                     <label>Contraseña</label>
-                    <input type="password" name="login_password" required />
+                    <input type="password" name="password" required />
                 </div>
-                <button type="submit" name="login_submit" value="login">Iniciar sesion</button>
+                <button type="submit" name="login" value="login">Iniciar sesion
+                </button>
             </form>
 		</div>
 	</div>
@@ -43,10 +47,7 @@
     <br>
     <br>
 	<div class="con_bd"> 
-        <?php
-            include 'Conexion.php';
-            echo "Estado conexion a Base de Datos: $con";
-        ?>
+        
         <br>
     </div>
 </body>

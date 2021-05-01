@@ -96,9 +96,9 @@ label {
 
 input {
     border: 2px solid #ccc;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
-    font-family: 'Lato';
+    font-family: 'Comfortaa';
     padding: 10px;
 }
 
@@ -117,7 +117,7 @@ div.form-element {
 button {
     padding: 10px;
     font-size: 1.5rem;
-    font-family: 'Lato';
+    font-family: 'Comfortaa';
     font-weight: 100;
     background: yellowgreen;
     color: white;
