@@ -81,16 +81,30 @@ input:checked ~ .menu-content {
 }
 
 .parrafo {
-	color: #00af05;
+	color: rgba(218, 15, 122, 1);
 	font-family: Calibri,sans-serif;
 	font-size: 27px;
 	text-align: center;
-	background-color: rgba(255,255,255,0.6);
-	outline-style: solid;
-	outline-color: Red;
+	background-color: rgba(255,255,255,0.8);
+	#outline-style: solid;
+	#outline-color: Red;
 }
 
 #id2 {
 	background-color: rgba(255,255,255,0.6);
+}
+
+#id3 {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.con_bd {
+    color: rgba(218, 15, 122, 1);
+	font-family: Calibri,sans-serif;
+	font-size: 27px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	#outline-style: solid;
+	#outline-color: Red;
 }
 
