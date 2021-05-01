@@ -1,0 +1,91 @@
+@charset="utf8";
+/* Hoja de estilos para utilidades.html */
+h1 {
+	text-align: center;
+	background:DodgerBlue;
+	color:White;
+	font-family: Segoe UI;
+	font-size: 33px;
+}
+
+body {
+	background-image: url("../media/images/Techno-Wallpaper.jpg");
+}
+
+#id1 {
+	text-align: justify-all;
+	font-family: Arial;
+	font-size: 23px; 
+	color: White;
+}
+
+.relleno {
+	background-color: rgb(120, 200, 160);
+}
+
+.menu-content {
+	max-height: 0;
+	overflow:hidden;
+	font-family: Calibri, sans-serif;
+	font-size: 20px;
+	padding: 0 0 0 50px;
+}
+
+.collapsible-menu {
+	padding:0 30px;
+	border-bottom:3px solid #CDE700;
+	box-shadow:1px 2px 3px rgba (0,0,0,0.2);
+	background-color: rgba(255,255,255,0.8);
+}
+
+.collapsible-menu ul {
+	padding:0px 17px;
+	list-style-image: url(../media/images/right-arrow.png);
+}
+
+.collapsible-menu a {
+	display: block;
+	padding:10px;
+	text-decoration: none;
+	color: Black;
+}
+
+.collapsible-menu label {
+	text-align: left;
+	font-family: Arial;
+	font-size: 21px; 
+	color: Red;
+	display: block;
+	background: url(../media/images/Right-Arrow-PNG-Photo.png) no-repeat left center;
+	background-size: 30px;
+	padding: 10px 0 10px 50px;
+}
+
+input#jailbreaks {
+	display: none;
+}
+
+input#ps-exploits {
+	display: none;
+}
+
+input#XSS {
+	display: none;
+}
+
+input:checked +label {
+	background-image: url(../media/images/close.png);
+	background-size: 30px;
+}
+
+/* Para descargarse los iconos, bajarselos de aqui http://www.flaticon.com/ */
+
+/* Para que funcione el efecto de contraccion-expansion del menu */
+
+input:checked ~ label {
+	background-image: url(../media/images/close.png); 
+}
+
+input:checked ~ .menu-content {
+	max-height: 100%;
+}

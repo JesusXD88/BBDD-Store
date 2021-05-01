@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/* Diseño del archivo de muusica electronica */
+h1 {
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align:center;
+}
+
+table, th, td {
+	font-family: Segoe UI;
+	border: 1px solid Blue;
+	font-size: 18px;
+}
+
+#id1 {
+	background-color: rgb(12, 255, 96);
+}

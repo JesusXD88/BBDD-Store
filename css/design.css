@@ -1,0 +1,96 @@
+@charset="utf8";
+
+h1 {
+	font-family: "Comfortaa", sans-serif;
+	text-align: center;
+	font-size: 40px;
+	background-color: rgba(255,255,255,0.6) ;
+	color: rgba(255, 33, 124, 1);
+}
+
+body {
+	background-image: url(../media/images/7303-colores.png);
+	background-size: auto;
+	align-items: center;
+}
+
+.menu-content {
+	max-height: 0;
+	overflow:hidden;
+	font-family: Calibri, sans-serif;
+	font-size: 20px;
+	padding: 0 0 0 50px;
+}
+
+.collapsible-menu {	padding:0 30px;
+	border-bottom:3px solid #CDE700;
+	box-shadow:1px 2px 3px rgba (0,0,0,0.2);
+	background-color: rgba(255,255,255,0.6);
+}
+
+.collapsible-menu ul {
+	padding:0px 17px;
+	list-style-image: url(../media/images/right-arrow.png);
+}
+
+.collapsible-menu a {
+	display: block;
+	padding:10px;
+	text-decoration: none;
+	color: Black;
+}
+
+.collapsible-menu label {
+	text-align: left;
+	font-family: Arial;
+	font-size: 21px; 
+	color: Red;
+	display: block;
+	background: url(../media/images/Right-Arrow-PNG-Photo.png) no-repeat left center;
+	background-size: 30px;
+	padding: 10px 0 10px 50px;
+}
+
+input#Jesussify {
+	display: none;
+}
+
+input#Minijuegos_jesus {
+	display: none;
+}
+
+input#Utilidades {
+	display: none;
+}
+
+input:checked +label {
+	background-image: url(../media/images/close.png);
+	background-size: 30px;
+}
+
+/* Para descargarse los iconos, bajarselos de aqui http://www.flaticon.com/ */
+
+/* Para que funcione el efecto de contraccion-expansion del menu */
+
+input:checked ~ label {
+	background-image: url(../media/images/close.png); 
+}
+
+input:checked ~ .menu-content {
+	max-height: 100%;
+}
+
+.parrafo {
+	color: #00af05;
+	font-family: Calibri,sans-serif;
+	font-size: 27px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.6);
+	outline-style: solid;
+	outline-color: Red;
+}
+
+#id2 {
+	background-color: rgba(255,255,255,0.6);
+}
+
