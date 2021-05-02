@@ -112,6 +112,8 @@ form {
 
 div.form-element {
     margin: 20px 0;
+    position: relative;
+    left: 20px;
 }
 
 button {
@@ -122,6 +124,8 @@ button {
     background: yellowgreen;
     color: white;
     border: none;
+    position: relative;
+    left: 1.5%;
 }
 
 p.success,
@@ -136,3 +140,33 @@ p.error {
     background: orangered;
 }
 
+.imagen {
+    width: 12%;
+    position: relative;
+    top: 2px;
+}
+
+.bd {
+    width: 1.5%;
+    position: relative;
+    top: 4px;
+}
+
+.acc {
+    width: 18%;
+    position: relative;
+    top: 4px;
+    right: 4%;
+}
+
+.pass {
+    width: 18%;
+    position: relative;
+    top: 4px;
+    right: 4%;
+}
+
+.box {
+    position: relative;
+    left: 5%;
+}

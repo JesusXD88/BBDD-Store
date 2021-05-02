@@ -20,7 +20,7 @@
             echo '
                 <script>
                     alert("¡Se ha iniciado sesión correctamente!");
-                    window.location.href="jesussify.html";
+                    window.location.href="dashboard.php";
                 </script>
                 ';
             die();
