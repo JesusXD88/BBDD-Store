@@ -1,9 +1,9 @@
 <?php
                         /* Inicio del Script PHP */
                         
-$host = "localhost";
-$username = "root";
-$password = "";
+$host = 'localhost:3306';
+$username = 'root';
+$password = '';
 $database = 'Practica03';
 
 // Creamos la conexion

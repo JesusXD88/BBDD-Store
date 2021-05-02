@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include('branches/Login.php');
 ?>
 <!DOCTYPE html>
