@@ -13,9 +13,10 @@ $mysqli = mysqli_connect($host, $username, $password, $database);
 // Comprobamos la conexion
 
 if ($mysqli -> connect_errno) {
-    echo "No se ha podido conectar a la DB (" .$mysqli -> connect_errno . ")" . $mysqli -> connect_error . "<br/>";
+    $con_status = "No se ha podido conectar a la DB (" .$mysqli -> connect_errno . ")" . $mysqli -> connect_error . "<br/>";
+} else {
+    $con_status = "Conectado con exito (". $mysqli -> host_info . ")";
 }
-
 #echo "Conectado" . $mysqli -> host_info . "br/";
 
 

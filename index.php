@@ -25,10 +25,10 @@
 	</div>
 	<div>
 		<div>
-            <form action="" method="post" name="signin-form">
+            <form action="branches/Login.php" method="post" name="signin-form">
                 <div class="form-element">
                     <label>Usuario</label>
-                    <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+                    <input type="text" name="username" pattern="[a-zA-Z0-9\u00f1\u00d1]+" required />
                 </div>
                 <div class="form-element">
                     <label>Contraseña</label>
@@ -48,7 +48,8 @@
     <br>
     <br>
 	<div class="con_bd"> 
-        
-        <br>
+        <?php
+            echo "Estado de la conexión a la BD: $con_status";
+        ?>
     </div>
 </body>
