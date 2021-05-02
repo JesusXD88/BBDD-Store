@@ -41,12 +41,15 @@ body {
 
 li a:hover {
 	background-color: #111;
+    float: right;
 }
 
 #id3 {
 	background-color: #33cc33; 
-    /*top: 13.6%;
+    /*position: absolute;
+    top: 13.6%;
     right: 30px;*/
+
 }
 
 #id1 {

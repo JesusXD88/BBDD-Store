@@ -5,7 +5,7 @@
 <html>
 <head>
     <title> BBDD Store </title>
-	<link rel="stylesheet" type="text/css" href="../css/design-dashboard.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/designdashboard.css"/>
 	<h1> BBDD Store </h1>
 	<nav>
 		<ul class="menubar">
@@ -13,7 +13,7 @@
 				<a href="Rock.html" target="new" class="links"> Cat&aacute;logo </a>
 			</li>
             <li class="menu">
-				<a href="Rock.html" target="new" class="links"> Carrito </a>
+				<a href="Rock.html" target="new" class="links"> Mi Carrito </a>
 			</li>
 			<li class="menu">
 				<a href="musica_electronica.html" target="new" class="links"> Favoritos </a>
@@ -25,21 +25,15 @@
 	</nav>
 </head>
 <body>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
 	<div class="fondo">
-		<p id="id1"> Bienvenid@ a Jesussify, mi mini portal de musica en streaming y de descarga gratuito. No es necesario cuenta, solamente selecciona una categoria y a disfrutar!!!!
-		<br></br>
-		<br id="id2">Selecciona categoria: </br>
+		<p id="id1"> Selecciona una entrada para acceder a ella. <br><br>
+		En cat&aacute;logo podras examinar las secciones de los art&iacute;culos de la tienda, as&iacute; como las subcategorias en las que se dividen. 
+		En cada categoria podr&aacute; encontrar una lista con los productos adquiridos. Además podrás gestionar los productos que añadiste al carrito o a favoritos.<br><br> Una vez que tengas claro lo que quieres comprar, procede a comprarlos dentro del carrito.
 		</p>
-	</div>
-	<div class="fondo">
-		<ul>
-			<li> 
-				<a href="../branches/Rock.html" target="new"> Rock </a>
-			</li>
-			<li> 
-				<a href="../branches/musica_electronica.html" target="new"> Electro
-				</a>
-			</li>
-		</ul>
 	</div>
 </body>
