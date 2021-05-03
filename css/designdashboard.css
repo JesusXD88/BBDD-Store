@@ -30,6 +30,7 @@ body {
 }
 
 .menubar{
+    position: relative;
 	list-style-type: none;
 	margin: 3;
 	padding: 0;
@@ -41,15 +42,14 @@ body {
 
 li a:hover {
 	background-color: #111;
-    float: right;
+     cursor: pointer;
 }
 
 #id3 {
 	background-color: #33cc33; 
-    /*position: absolute;
-    top: 13.6%;
-    right: 30px;*/
-
+    position: absolute;
+    top: 0%;
+    right: 30px;
 }
 
 #id1 {
@@ -85,7 +85,30 @@ li {
 	padding:10px 5px 10px 5px;
 }
 
-.fondo a {
-	text-decoration: none;
-	color: Blue;
+.subnav-content {
+    background-color: #111;
+    display: none;
+    position: relative;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.lnk {
+    text-align: left;
+}
+
+.subnav-content a:hover {
+    background-color: #da0f7a;
+    cursor: pointer;
+}
+
+.menu:hover .subnav-content {
+  display: block;
 }

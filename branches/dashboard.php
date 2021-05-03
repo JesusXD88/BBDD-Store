@@ -1,5 +1,12 @@
 <?php
-
+    include('Conexion.php');
+    $arr = array("0","1","2","3","4");
+    $total = array();
+    for ($i = 0; $i < 5; $i++) {
+        $query = mysqli_query($mysqli, "select Secciones.Nombre from Secciones where Secciones.idSeccion='$arr[$i]'");
+        $result = mysqli_fetch_row($query);
+        $total [$i] = $result;
+    }
 ?>
 <!doctype html>
 <html>
@@ -7,10 +14,50 @@
     <title> BBDD Store </title>
 	<link rel="stylesheet" type="text/css" href="../css/designdashboard.css"/>
 	<h1> BBDD Store </h1>
-	<nav>
+</head>
+<body>
+    <nav>
 		<ul class="menubar">
 			<li class="menu">
-				<a href="Rock.html" target="new" class="links"> Cat&aacute;logo </a>
+                <a class="links"> Cat&aacute;logo </a>
+                <div class="subnav-content">
+                    <br>
+                    <a href="#company" class="lnk">
+                        <?php
+                            echo $total[0][0];
+                        ?>
+                    </a>
+                    <br>
+                    <br>
+                    <a href="#team">
+                    <?php
+                            echo $total[1][0];
+                        ?>
+                    </a>
+                    <br>
+                    <br>
+                    <a href="#careers">
+                    <?php
+                            echo $total[2][0];
+                        ?>
+                    </a>
+                    <br>
+                    <br>
+                     <a href="#careers">
+                    <?php
+                            echo $total[3][0];
+                        ?>
+                    </a>
+                    <br>
+                    <br>
+                     <a href="#careers">
+                    <?php
+                            echo $total[4][0];
+                        ?>
+                    </a>
+                    <br>
+                    <br>
+                </div>
 			</li>
             <li class="menu">
 				<a href="Rock.html" target="new" class="links"> Mi Carrito </a>
@@ -23,8 +70,6 @@
             </li>
 		</ul>
 	</nav>
-</head>
-<body>
     <br>
         <br>
         <br>
