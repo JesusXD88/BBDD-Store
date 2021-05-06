@@ -15,7 +15,7 @@
 
 <?php
     session_start();
-    include('branches/Login.php');
+    include('branches/login.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +40,7 @@
 	</div>
 	<div>
 		<div>
-            <form action="branches/Login.php" method="post" name="signin-form">
+            <form action="branches/login.php" method="post" name="signin-form">
                 <div class="form-element">
                     <label>
                         <img src="media/images/account-circle-outline.png" class="acc"/>Usuario</label>
