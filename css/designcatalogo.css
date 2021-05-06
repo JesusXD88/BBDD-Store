@@ -79,6 +79,10 @@ html {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+body {
+    background-image: url("../media/images/1920x1080.jpg");
+}
+
 .cat {
     color: white;
     text-align: center;
@@ -174,3 +178,56 @@ html {
 .menu:hover .subnav-content {
   display: block;
 }
+
+.co {
+    position: relative;
+    left: 50px;
+}
+
+table, th, td {
+  border: 1px solid black;
+   border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 15px;
+}
+
+
+.fo {
+    position: relative;
+    top: 14px;
+}
+
+.fo2 {
+    position: relative;
+    top: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #2b2f31;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: #181a1b;
+  color: white;
+}
+th {
+  color: white;
+  background-color: #181a1b;
+}
+
+.cate {
+    color: white;
+}
+.cate2 {
+    position: relative;
+    width: 150%;
+    color: white;
+    left: 70px;
+}
+/*.imagen {
+    width: 12%;
+    position: relative;
+    top: 2px;
+}*/

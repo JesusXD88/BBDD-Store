@@ -32,7 +32,7 @@
 </div>
 <div class="row">
   <div class="col-3 col-s-3 menu">
-    <p class ="cat"> Secciones y <br> Categorias </p>
+    <p class ="cat"> Secciones y <br> Categor&iacute;as </p>
     <ul>
         <?php
             while ($row = mysqli_fetch_object($query)) {
@@ -57,9 +57,19 @@
     </ul>
   </div>
 
-  <div class="col-6 col-s-9">
-    <h1>Productos</h1>
-    <table>
+  <div class="col-6 col-s-9 co">
+    <h1 class="cate">Productos</h1>
+    <p class="cate2"> 
+     Selecciona una categoría y a continuación se mostrar&aacute;n sus productos </p>
+     <br>
+    <p class="cate">&emsp;&emsp;Categor&iacute;a: 
+        <?php 
+                $query4 = mysqli_query($mysqli, "select Nombre from Categorias where idCategoria = $categoria");
+                $row4 = mysqli_fetch_object($query4);
+                printf("%s", $row4->Nombre);
+        ?> 
+    </p>
+    <table class="tabla">
         <tr>
             <th> Nombre </th>
             <th> Descripcion </th>
@@ -69,9 +79,41 @@
             <th> </th>
         </tr>
         <?php
-            $query3 = mysqli_query($mysqli, "select * from Productos");
-            //while ($row3 = mysqli_query(
+            $query3 = mysqli_query($mysqli, "select * from Productos where Categorias_idCategoria=$categoria");
+            while ($row3 = mysqli_fetch_object($query3)) {
+                echo '<tr>';
+                echo '<td>';
+                printf("%s", $row3->Nombre);
+                echo '</td>';
+                echo '<td>';
+                printf("%s", $row3->Descripcion);
+                echo '</td>';
+                echo '<td>';
+                printf("%d€", $row3->Precio);
+                echo '</td>';
+                echo '<td>';
+                printf("%s", $row3->Fabricante);
+                echo '</td>';
+                echo '<td>';
+                echo '<form action="https://www.w3docs.com/" class="fo">
+                        <button>
+                            <img src="../media/images/cart-plus.png"/>
+                        </button>
+                     </form>';
+                echo '&emsp;';
+                echo '</td>';
+                echo '<td>';
+                 echo '<form action="https://www.w3docs.com/" class="fo2">
+                        <button>
+                            <img src="../media/images/star-circle.png"/>
+                        </button>
+                     </form>';
+                echo '</td>';
+                echo '</tr>';
+            }
         ?>
+    </table>
   </div>
+</div>
 </body>
 </html>
