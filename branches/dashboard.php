@@ -19,10 +19,10 @@
     <nav>
 		<ul class="menubar">
 			<li class="menu">
-                <a class="links"> Cat&aacute;logo </a>
+                <a href="catalogo.php" class="links"> Cat&aacute;logo </a>
                 <div class="subnav-content">
                     <br>
-                    <a href="#company" class="lnk">
+                    <a href="catalogo.php" class="lnk">
                         <?php
                             echo $total[0][0];
                         ?>

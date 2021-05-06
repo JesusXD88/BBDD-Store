@@ -19,6 +19,7 @@
             $_SESSION['login_user'] = $username;
             echo '
                 <script>
+                    var cosa = <?php echo $test;?>
                     alert("¡Se ha iniciado sesión correctamente!");
                     window.location.href="dashboard.php";
                 </script>
