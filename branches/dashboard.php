@@ -15,13 +15,16 @@
 
 <?php
     include('conexion.php');
+    $login = $_GET['login'];
     $arr = array("0","1","2","3","4");
     $total = array();
-    for ($i = 0; $i < 5; $i++) {
+    /*for ($i = 0; $i < 5; $i++) {
         $query = mysqli_query($mysqli, "select Secciones.Nombre from Secciones where Secciones.idSeccion='$arr[$i]'");
         $result = mysqli_fetch_row($query);
         $total [$i] = $result;
-    }
+    }*/
+    $query = mysqli_query($mysqli, "select Secciones.Nombre from Secciones");
+    $i = 0;
 ?>
 <!doctype html>
 <html>
@@ -34,44 +37,16 @@
     <nav>
 		<ul class="menubar">
 			<li class="menu">
-                <a href="catalogo.php" class="links"> Cat&aacute;logo </a>
+                <a href="catalogo.php?login=<?php echo $login?>" class="links"> Cat&aacute;logo </a>
                 <div class="subnav-content">
                     <br>
-                    <a href="catalogo.php" class="lnk">
-                        <?php
-                            echo $total[0][0];
-                        ?>
-                    </a>
-                    <br>
-                    <br>
-                    <a href="#team">
                     <?php
-                            echo $total[1][0];
-                        ?>
-                    </a>
-                    <br>
-                    <br>
-                    <a href="#careers">
-                    <?php
-                            echo $total[2][0];
-                        ?>
-                    </a>
-                    <br>
-                    <br>
-                     <a href="#careers">
-                    <?php
-                            echo $total[3][0];
-                        ?>
-                    </a>
-                    <br>
-                    <br>
-                     <a href="#careers">
-                    <?php
-                            echo $total[4][0];
-                        ?>
-                    </a>
-                    <br>
-                    <br>
+                        while ($row = mysqli_fetch_object($query)) {
+                            echo ' <a href="catalogo.php" class="lnk"> ';  printf("%s", $row->Nombre);
+                            echo ' </a> ';
+                            echo ' <br> <br> ';
+                        }         
+                    ?>
                 </div>
 			</li>
             <li class="menu">

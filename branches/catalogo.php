@@ -17,11 +17,12 @@
     include('conexion.php');
     $arr = array("0","1","2","3","4");
     $total = array();
-    for ($i = 0; $i < 5; $i++) {
-        $query = mysqli_query($mysqli, "select Secciones.Nombre from Secciones where Secciones.idSeccion='$arr[$i]'");
+    $query = mysqli_query($mysqli, "select * from Secciones");
+    /*for ($i = 0; $i < 5; $i++) {
+        
         $result = mysqli_fetch_row($query);
         $total [$i] = $result;
-    }
+    }*/
 ?>
 <html>
 <!doctype html>
@@ -35,43 +36,24 @@
 </div>
 <div class="row">
   <div class="col-3 col-s-3 menu">
-    <p class ="cat"> Secciones </p>
+    <p class ="cat"> Secciones y <br> Categorias </p>
     <ul>
-        <li>
-            <?php
-                echo $total[0][0];
-            ?>
-            <div class="subnav-content">
-                <br>
-                <a href="catalogo.php" class="lnk">
-                    <?php
-                            echo $total[0][0];
-                    ?>
-                </a>
-                <br>
-                <br>
-            </div>
-        </li>
-        <li>
-            <?php
-                echo $total[1][0];
-            ?>
-        </li>
-        <li>
-            <?php
-                echo $total[2][0];
-            ?>
-        </li>
-        <li>
-            <?php
-                echo $total[3][0];
-            ?>
-        </li>
-        <li>
-            <?php
-                echo $total[4][0];
-            ?>
-        </li>
+        <?php
+            while ($row = mysqli_fetch_object($query)) {
+                echo ' <li> ';
+                printf("%s", $row->Nombre);
+                echo ' <br> <br> ';
+                $query2 = mysqli_query($mysqli, "select Categorias.Nombre from Categorias where Secciones_idSeccion = '$row->idSeccion'");
+                echo ' <div class="subnav-content"> ';
+                while ($row2 = mysqli_fetch_object($query2)) {
+                    echo ' <a href="catalogo.php" class="lnk"> '; 
+                    printf("%s", $row2->Nombre);
+                    echo ' </a> ';
+                }
+                echo ' </div> ';
+                echo ' </li> ';
+            }         
+        ?>
     </ul>
   </div>
 
