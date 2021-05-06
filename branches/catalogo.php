@@ -15,14 +15,10 @@
 
 <?php
     include('conexion.php');
-    $arr = array("0","1","2","3","4");
+    $username = $_GET['username'];
+    $categoria = $_GET['categoria'];
     $total = array();
     $query = mysqli_query($mysqli, "select * from Secciones");
-    /*for ($i = 0; $i < 5; $i++) {
-        
-        $result = mysqli_fetch_row($query);
-        $total [$i] = $result;
-    }*/
 ?>
 <html>
 <!doctype html>
@@ -43,10 +39,14 @@
                 echo ' <li> ';
                 printf("%s", $row->Nombre);
                 echo ' <br> <br> ';
-                $query2 = mysqli_query($mysqli, "select Categorias.Nombre from Categorias where Secciones_idSeccion = '$row->idSeccion'");
+                $query2 = mysqli_query($mysqli, "select * from Categorias where Secciones_idSeccion = '$row->idSeccion'");
                 echo ' <div class="subnav-content"> ';
                 while ($row2 = mysqli_fetch_object($query2)) {
-                    echo ' <a href="catalogo.php" class="lnk"> '; 
+                    echo ' <a href="catalogo.php?username=';
+                    echo $username;
+                    echo '&categoria=';
+                    printf("%d", $row2->idCategoria);
+                    echo '" class="lnk"> '; 
                     printf("%s", $row2->Nombre);
                     echo ' </a> ';
                 }
@@ -58,8 +58,20 @@
   </div>
 
   <div class="col-6 col-s-9">
-    <h1>The City</h1>
-    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <h1>Productos</h1>
+    <table>
+        <tr>
+            <th> Nombre </th>
+            <th> Descripcion </th>
+            <th> Precio </th>
+            <th> Fabricante </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <?php
+            $query3 = mysqli_query($mysqli, "select * from Productos");
+            //while ($row3 = mysqli_query(
+        ?>
   </div>
 </body>
 </html>

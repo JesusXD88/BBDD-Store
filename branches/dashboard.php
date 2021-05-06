@@ -15,14 +15,8 @@
 
 <?php
     include('conexion.php');
-    $login = $_GET['login'];
-    $arr = array("0","1","2","3","4");
+    $username = $_GET['username'];
     $total = array();
-    /*for ($i = 0; $i < 5; $i++) {
-        $query = mysqli_query($mysqli, "select Secciones.Nombre from Secciones where Secciones.idSeccion='$arr[$i]'");
-        $result = mysqli_fetch_row($query);
-        $total [$i] = $result;
-    }*/
     $query = mysqli_query($mysqli, "select Secciones.Nombre from Secciones");
     $i = 0;
 ?>
@@ -37,17 +31,7 @@
     <nav>
 		<ul class="menubar">
 			<li class="menu">
-                <a href="catalogo.php?login=<?php echo $login?>" class="links"> Cat&aacute;logo </a>
-                <div class="subnav-content">
-                    <br>
-                    <?php
-                        while ($row = mysqli_fetch_object($query)) {
-                            echo ' <a href="catalogo.php" class="lnk"> ';  printf("%s", $row->Nombre);
-                            echo ' </a> ';
-                            echo ' <br> <br> ';
-                        }         
-                    ?>
-                </div>
+                <a href="catalogo.php?username=<?php echo $username?>" class="links"> Cat&aacute;logo </a>
 			</li>
             <li class="menu">
 				<a href="Rock.html" target="new" class="links"> Mi Carrito </a>

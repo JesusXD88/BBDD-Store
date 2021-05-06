@@ -36,7 +36,7 @@
                 <script>
                     var user = ' . json_encode($username) . ';
                     alert("¡" + user + ", has iniciado sesión correctamente!");
-                    var url = "dashboard.php?login=" + user
+                    var url = "dashboard.php?username=" + user
                     window.location.href=url;
                 </script>
                 ';
