@@ -34,7 +34,7 @@
                 <a href="catalogo.php?username=<?php echo $username?>" class="links"> Cat&aacute;logo </a>
 			</li>
             <li class="menu">
-				<a href="Rock.html" target="new" class="links"> Mi Carrito </a>
+				<a href="carrito.php?username=<?php echo $username?>" target="new" class="links"> Mi Carrito </a>
 			</li>
 			<li class="menu">
 				<a href="musica_electronica.html" target="new" class="links"> Favoritos </a>
