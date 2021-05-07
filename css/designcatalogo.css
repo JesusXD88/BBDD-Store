@@ -196,12 +196,15 @@ th, td {
 
 .fo {
     position: relative;
-    top: 14px;
+    top: -1px;
+    display: inline-block;
 }
 
 .fo2 {
     position: relative;
-    top: 5px;
+    top: -1px;
+    display: inline-block;
+    margin: 0 50px;
 }
 
 tr:nth-child(even) {
@@ -220,11 +223,37 @@ th {
 .cate {
     color: white;
 }
+
+.cate3 {
+    color: white;
+    position: relative;
+    left: 200px;
+}
+
 .cate2 {
     position: relative;
     width: 150%;
     color: white;
     left: 70px;
+}
+
+.in {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    top: -5px;
+    margin: 2px 10px;
+}
+
+.carr {
+    width: 20%;
+}
+
+.fr {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    margin: 4px 20px;
 }
 /*.imagen {
     width: 12%;

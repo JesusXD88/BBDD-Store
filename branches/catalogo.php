@@ -60,9 +60,9 @@
   <div class="col-6 col-s-9 co">
     <h1 class="cate">Productos</h1>
     <p class="cate2"> 
-     Selecciona una categoría y a continuación se mostrar&aacute;n sus productos </p>
+     Selecciona una categoría y a continuación se mostrar&aacute;n sus productos. <br> Para a&ntilde;adir al carrito, introduce una cantidad y pulsa a a&ntilde;adir al carrito.</p>
      <br>
-    <p class="cate">&emsp;&emsp;Categor&iacute;a: 
+    <p class="cate3">&emsp;&emsp;Categor&iacute;a: 
         <?php 
                 $query4 = mysqli_query($mysqli, "select Nombre from Categorias where idCategoria = $categoria");
                 $row4 = mysqli_fetch_object($query4);
@@ -75,8 +75,8 @@
             <th> Descripcion </th>
             <th> Precio </th>
             <th> Fabricante </th>
-            <th> </th>
-            <th> </th>
+            <th> A&ntilde;dir al Carrito </th>
+            <th> A&ntilde;dir a Favoritos </th>
         </tr>
         <?php
             $query3 = mysqli_query($mysqli, "select * from Productos where Categorias_idCategoria=$categoria");
@@ -94,20 +94,27 @@
                 echo '<td>';
                 printf("%s", $row3->Fabricante);
                 echo '</td>';
-                echo '<td>';
-                echo '<form action="https://www.w3docs.com/" class="fo">
-                        <button>
-                            <img src="../media/images/cart-plus.png"/>
+                echo '<td class ="carr">';
+                echo "<form class='fr' action='addCarrito.php'>
+                        <input type='text' class='in' name='cantidad'>
+                        <input type='hidden' name='username' value=$username>
+                        <input type='hidden' name='producto' value=$row3->Codigo>
+                        <button type='submit'>
+                            <img src='../media/images/cart-plus.png'/>
                         </button>
-                     </form>';
-                echo '&emsp;';
+                     </form>";
+                //echo '&emsp;';
                 echo '</td>';
-                echo '<td>';
-                 echo '<form action="https://www.w3docs.com/" class="fo2">
+                echo '<td class ="carr">';
+                echo '<a href="addCarrito.php?username=';
+                echo $username;
+                echo '&producto=';
+                printf("%d", $row3->Codigo);
+                echo '" class="fo2">
                         <button>
                             <img src="../media/images/star-circle.png"/>
                         </button>
-                     </form>';
+                     </a>';
                 echo '</td>';
                 echo '</tr>';
             }
