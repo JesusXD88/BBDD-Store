@@ -62,9 +62,9 @@
                 echo '</td>';
                 echo '<td>';
                 $query2 = mysqli_query($mysqli, "select * from Direccion where Cliente_Login='$username'");
-                echo "<select name='direccion'>";
+                echo "<form action='efectuarCompra.php'> <select name='direccion'>";
                 while ($row2 = mysqli_fetch_object($query2)) {
-                    echo "<option value='$row2->idDireccion'>";
+                    echo "<option value=$row2->idDireccion>";
                     printf("%s", $row2->Calle);
                     echo " ";
                     printf("%d", $row2->Numero);
@@ -72,7 +72,8 @@
                     printf("%s", $row2->Ciudad);
                     echo "</option>";
                 }
-                echo "</select>";
+                echo "</select> ";
+                
                 echo '</td>';
                 echo '<td>';
                 $query3 = mysqli_query($mysqli, "select * from `Empresa de Transporte`");
@@ -85,10 +86,8 @@
                 echo "</select>";
                 echo '</td>';
                 echo '<td>';
-                echo "<form class='fr' action='pagar.php'>
-                        <input type='hidden' name='username' value=$username>
+                echo "<input type='hidden' name='username' value=$username>
                         <input type='hidden' name='producto' value=$producto>
-                        <input type='hidden' name='cantidad' value=$cantidad>
                         <input type='hidden' name='cantidad' value=$cantidad>
                         <button type='submit'>
                             <img src='../media/images/cart-arrow-right.png'/>

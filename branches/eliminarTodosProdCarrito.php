@@ -16,12 +16,12 @@
 <?php
     include('conexion.php');
     $username = $_GET['username'];
-    $producto = $_GET['producto'];
-    $query = mysqli_query($mysqli, "delete from `Productos del Carrito` where Cliente_Login='$username' and Productos_Codigo=$producto");
+    $query = mysqli_query($mysqli, "truncate table `Productos del Carrito`");
     echo "
         <script>
             var url = 'carrito.php?username=$username';
                     window.location.href=url;
         </script>
         ";
+    
 ?>

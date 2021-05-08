@@ -80,19 +80,17 @@
                     echo '</td>';
                     echo '</tr>';
                 }
+                echo "<tr>
+                        <th colspan='6'> Eliminar todo --> </th>
+                        <td>
+                            <form class='fr' action='eliminarTodosProdCarrito.php'>
+                                <input type='hidden' name='username' value=$username>
+                                <button type='submit'>
+                                    <img src='../media/images/cart-minus.png'/>
+                                </button>
+                            </form>
+                    </tr>";
             ?>
-            <tr>
-                <th colspan="5"> Comprar / Eliminar todo --> </th>
-                <td>
-                    <form class='fr' action='addCarrito.php'>
-                            <input type='hidden' name='username' value=$username>
-                            <input type='hidden' name='producto' value=>
-                            <button type='submit'>
-                                <img src='../media/images/cart-arrow-right.png'/>
-                            </button>
-                     </form>
-                </td>
-            </tr>
         </table>
     </div>
 </body>
