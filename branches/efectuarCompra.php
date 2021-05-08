@@ -50,9 +50,8 @@
         $row = mysqli_fetch_object($query2);
         $prod_precio = $row->Precio;
         $totalCompra = $prod_precio * $cantidad;
-        $estado = array('pendientes', 'enviadas', 'recibidas');
-        shuffle($estado);
-        $query3 = mysqli_query($mysqli, "insert into Compras values($nextIdCompra, '$fechaRealizacion', $totalCompra, '$fechaEnvio', '$fechaRecepcion', '$estado[0]', '$username', '$transporte', $direccion)");
+        $estado = 'pendientes';
+        $query3 = mysqli_query($mysqli, "insert into Compras values($nextIdCompra, '$fechaRealizacion', $totalCompra, '$fechaEnvio', '$fechaRecepcion', '$estado', '$username', '$transporte', $direccion)");
         $seHaInsertadoCompra = mysqli_affected_rows($mysqli);
         if($seHaInsertadoCompra == 1) {
             $estadoDevolucion = array('Sin devolver','Pendiente de devolver','Ya ha sido devuelto');
