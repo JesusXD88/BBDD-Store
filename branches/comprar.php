@@ -40,6 +40,7 @@
                 <th> Fabricante </th>
                 <th> Precio </th>
                 <th> Cantidad </th>
+                <th> Importe Total </th>
                 <th> Direcci&oacute;n de Env&iacute;o </th>
                 <th> Transportista </th>
                 <th> Proceder al Pago </th>
@@ -63,6 +64,10 @@
                 echo '<td>';
                 printf("%d", $cantidad);
                 echo '</td>';
+                $importeTotal = $row->Precio * $cantidad;
+                echo '<td>';
+                printf("%d €", $importeTotal);
+                echo '</td>';
                 echo '<td>';
                 $query2 = mysqli_query($mysqli, "select * from Direccion where Cliente_Login='$username'");
                 echo "<form action='efectuarCompra.php'> <select name='direccion'>";
@@ -75,8 +80,7 @@
                     printf("%s", $row2->Ciudad);
                     echo "</option>";
                 }
-                echo "</select> ";
-                
+                echo "</select> ";    
                 echo '</td>';
                 echo '<td>';
                 $query3 = mysqli_query($mysqli, "select * from `Empresa de Transporte`");
@@ -100,7 +104,7 @@
                 echo '</tr>';
             ?>
             <tr> 
-                <td colspan="8" class="relleno"> </td>
+                <td colspan="9" class="relleno"> </td>
             </tr>
         </table>
     </div>

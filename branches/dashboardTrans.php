@@ -31,7 +31,7 @@
     <nav>
 		<ul class="menubar">
 			<li class="menu">
-                <a href="catalogo.php?staff=<?php echo $staff?>" class="links" target="new"> Visualizar Compras </a>
+                <a href="visualizarCompras.php?staff=<?php echo $staff?>" class="links" target="new"> Visualizar Compras </a>
 			</li>
 			<li class="menu">
 				<a href="logoutTrans.php" class="links" id="id3"> Cerrar Sesi&oacute;n </a>
