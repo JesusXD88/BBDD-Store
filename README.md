@@ -1,5 +1,7 @@
 # BBDD-Store
 
+Desarrollado por JesusXD88.
+
 ## Descripcion
 
 Este proyecto consiste en el desarrollo de una página web diseñada en PHP, HTML y CSS para el desarrollo de una práctica de una asignatura de la universidad.
