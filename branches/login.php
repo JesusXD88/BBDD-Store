@@ -30,7 +30,6 @@
                 ';
             die();
         } else {
-            #session_register("myusername");
             $_SESSION['login_user'] = $username;
             echo '
                 <script>

@@ -109,7 +109,6 @@
                             <img src='../media/images/cart-plus.png'/>
                         </button>
                      </form>";
-                //echo '&emsp;';
                 echo '</td>';
                 echo '<td class ="carr">';
                 echo "<form action='addFav.php' class='fo2'>";

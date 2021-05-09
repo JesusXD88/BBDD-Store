@@ -60,9 +60,6 @@ input:checked +label {
 	background-size: 30px;
 }
 
-/* Para descargarse los iconos, bajarselos de aqui http://www.flaticon.com/ */
-
-/* Para que funcione el efecto de contraccion-expansion del menu */
 
 input:checked ~ label {
 	background-image: url(../media/images/close.png); 

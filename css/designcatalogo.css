@@ -15,30 +15,6 @@
 
 @charset="utf8";
 
-/*h1 {
-	font-family: "Comfortaa", sans-serif;
-	text-align: center;
-	font-size: 40px;
-	background-color: rgba(255,255,255,0.6) ;
-	color: rgba(255, 33, 124, 1);
-}
-
-body {
-	background-image: url(../media/images/7303-colores.png);
-	background-size: auto;
-	#align-items: center;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.Cajitas {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}*/
 
 * {
   box-sizing: 30px;
