@@ -15,7 +15,7 @@
 
 <?php
     session_start();
-    include('branches/login.php');
+    include('php/login.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +40,7 @@
 	</div>
 	<div>
 		<div>
-            <form action="branches/login.php" method="post" name="signin-form" class="forma">
+            <form action="php/login.php" method="post" name="signin-form" class="forma">
                 <div class="form-element">
                     <label>
                         <img src="media/images/account-circle-outline.png" class="acc"/>Usuario</label>
@@ -64,7 +64,7 @@
             ¿Trabajas en una empresa de transporte?
     </p>
     <br>
-    <form action="branches/loginTransporte.php" method="post" name="signin-form2">
+    <form action="php/loginTransporte.php" method="post" name="signin-form2">
         <button type="submit" name="loginTran" value="loginTran" class="btn">
                     <img src="media/images/arrow-right-circle-outline4.png" class="imagen"/>
                     Inicia sesi&oacute;n aqu&iacute;
