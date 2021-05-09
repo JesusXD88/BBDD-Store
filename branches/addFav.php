@@ -19,30 +19,19 @@
     $producto = $_GET['producto'];
     $query = mysqli_query($mysqli, "select * from Productos where Codigo=$producto");
     $row = mysqli_fetch_object($query);
-    if (!empty($_GET['cantidad'])) {
-        $cantidad = $_GET['cantidad'];
-        $queryI = mysqli_query($mysqli, "insert into `Productos del Carrito` values($cantidad,'$username',$producto)");
-        if (mysqli_affected_rows($mysqli) == 1) {
-            echo "
-                    <script>
-                        alert('¡Se ha añadido correctamente al Carrito!');
-                        var url = 'catalogo.php?username=$username&categoria=$row->Categorias_idCategoria';
-                        window.location.href=url;
-                    </script>
-                    ";
-        } else {
-            echo "
-                    <script>
-                        alert('¡No se ha podido añadir, probablemente ya haya sido añadido!');
-                        var url = 'catalogo.php?username=$username&categoria=$row->Categorias_idCategoria';
-                        window.location.href=url;
-                    </script>
+    $queryI = mysqli_query($mysqli, "insert into `Productos Favoritos` values('$username',$producto)");
+    if (mysqli_affected_rows($mysqli) == 1) {
+        echo "
+                <script>
+                    alert('¡Se ha añadido correctamente a Favoritos!');
+                    var url = 'catalogo.php?username=$username&categoria=$row->Categorias_idCategoria';
+                    window.location.href=url;
+                </script>
                 ";
-        }
     } else {
         echo "
                 <script>
-                    alert('¡Tienes que introducir una cantidad válida, no puedes dejarlo en blanco!');
+                    alert('¡No se ha podido añadir, probablemente ya haya sido añadido!');
                     var url = 'catalogo.php?username=$username&categoria=$row->Categorias_idCategoria';
                     window.location.href=url;
                 </script>

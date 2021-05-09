@@ -197,14 +197,16 @@ th, td {
 .fo {
     position: relative;
     top: -1px;
+    //right: -50px;
     display: inline-block;
+    margin: 0 30px;
 }
 
 .fo2 {
     position: relative;
     top: -1px;
     display: inline-block;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 tr:nth-child(even) {
@@ -239,10 +241,11 @@ th {
 
 .in {
     position: relative;
-    width: 30%;
+    width: 40px;
+    top: 5px;
     display: inline-block;
-    top: -5px;
-    margin: 2px 10px;
+    margin: 0 10px;
+    right: -5px;
 }
 
 .carr {
@@ -252,11 +255,73 @@ th {
 .fr {
     position: relative;
     top: -4px;
-    display: inline-block;
     margin: 4px 20px;
 }
-/*.imagen {
-    width: 12%;
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
     position: relative;
-    top: 2px;
-}*/
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  margin: 10px 76px;
+  left: 40px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #da0f7a;
+  margin: 10px 40px;
+}
+
+.button2:hover {
+  background-color: #da0f7a;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #e1f12b;
+  margin: 10px 40px;
+}
+
+.button3:hover {
+  background-color: #e1f12b;
+  color: black;
+}
+
+.im {
+    width: 27px;
+    position: relative;
+    top: 7px;
+}
+
+.ulu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.uli {
+  float: left;
+}

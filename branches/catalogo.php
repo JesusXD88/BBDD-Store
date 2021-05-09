@@ -75,8 +75,9 @@
             <th> Descripcion </th>
             <th> Precio </th>
             <th> Fabricante </th>
-            <th> A&ntilde;dir al Carrito </th>
-            <th> A&ntilde;dir a Favoritos </th>
+            <th> Cantidad </th>
+            <th> A&ntilde;adir al Carrito </th>
+            <th> A&ntilde;adir a Favoritos </th>
         </tr>
         <?php
             $query3 = mysqli_query($mysqli, "select * from Productos where Categorias_idCategoria=$categoria");
@@ -94,33 +95,69 @@
                 echo '<td>';
                 printf("%s", $row3->Fabricante);
                 echo '</td>';
+                echo "<td>";
+                echo "<form action='addCarrito.php'>
+                        <input type='text' name='cantidad' class='in'>";
+                echo "</td>";
                 echo '<td class ="carr">';
-                echo "<form class='fr' action='addCarrito.php'>
-                        <input type='text' class='in' name='cantidad'>
-                        <input type='hidden' name='username' value=$username>
+                echo "<input type='hidden' name='username' value=$username>
                         <input type='hidden' name='producto' value=$row3->Codigo>
-                        <button type='submit'>
+                        <button type='submit' class='fo'>
                             <img src='../media/images/cart-plus.png'/>
                         </button>
                      </form>";
                 //echo '&emsp;';
                 echo '</td>';
                 echo '<td class ="carr">';
-                echo '<a href="addCarrito.php?username=';
-                echo $username;
-                echo '&producto=';
-                printf("%d", $row3->Codigo);
-                echo '" class="fo2">
+                echo "<form action='addFav.php' class='fo2'>";
+                echo " 
+                        <input type='hidden' name='username' value=$username>
+                        <input type='hidden' name='producto' value=$row3->Codigo>
                         <button>
-                            <img src="../media/images/star-circle.png"/>
+                            <img src='../media/images/star-circle.png'/>
                         </button>
-                     </a>';
+                     </form>";
                 echo '</td>';
                 echo '</tr>';
             }
         ?>
     </table>
   </div>
+</div>
+<div>
+    <br>
+    <br>
+    <footer>
+        <ul class="ulu">
+            <li class="uli">
+                <form action='dashboard.php'>
+                    <input type='hidden' name='username' value=<?php echo $username?>>
+                    <button class="button button1">
+                        <img src="../media/images/home-circle-outline.png" class="im" />
+                        Volver al Dashboard
+                    </button>
+                </form>
+            </li>
+            <li class="uli">
+                <form action='carrito.php'>
+                    <input type='hidden' name='username' value=<?php echo $username?>>
+                    <button class="button button2">
+                        <img src="../media/images/cart.png" class="im" />
+                        Ir al Carrito
+                    </button>
+                </form>
+            </li>
+            <li class="uli">
+                <form action='favoritos.php'>
+                    <input type='hidden' name='username' value=<?php echo $username?>>
+                    <button class="button button3">
+                        <img src="../media/images/star-circle-outline.png" class="im" />
+                        Ir a Favoritos
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </footer> 
 </div>
 </body>
 </html>

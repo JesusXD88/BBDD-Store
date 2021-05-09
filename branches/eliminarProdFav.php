@@ -16,13 +16,12 @@
 <?php
     include('conexion.php');
     $username = $_GET['username'];
-    $query = mysqli_query($mysqli, "truncate table `Productos del Carrito`");
+    $producto = $_GET['producto'];
+    $query = mysqli_query($mysqli, "delete from `Productos Favoritos` where Cliente_Login='$username' and Productos_Codigo=$producto");
     echo "
         <script>
-            alert('Se han eliminado todos los productos del carrito');
-            var url = 'dashboard.php?username=$username';
-                    window.location.href=url;
+            var url = 'favoritos.php?username=$username';
+            window.location.href=url;
         </script>
         ";
-    
 ?>

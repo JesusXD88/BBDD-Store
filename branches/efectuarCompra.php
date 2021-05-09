@@ -74,7 +74,7 @@
                         </input>
                     </form>
                     <script>
-                        var confirmar = confirm('¿Desea generar una factura?');
+                        var confirmar = confirm('¡Se ha efectuado la compra con éxito! ¿Desea generar una factura?');
                         document.getElementById('conf').value = confirmar;
                         document.getElementsByTagName('form')[0].submit();
                     </script>

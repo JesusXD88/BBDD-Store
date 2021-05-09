@@ -31,13 +31,13 @@
     <nav>
 		<ul class="menubar">
 			<li class="menu">
-                <a href="catalogo.php?username=<?php echo $username?>" class="links"> Cat&aacute;logo </a>
+                <a href="catalogo.php?username=<?php echo $username?>" class="links" target="new"> Cat&aacute;logo </a>
 			</li>
             <li class="menu">
 				<a href="carrito.php?username=<?php echo $username?>" target="new" class="links"> Mi Carrito </a>
 			</li>
 			<li class="menu">
-				<a href="musica_electronica.html" target="new" class="links"> Favoritos </a>
+				<a href="favoritos.php?username=<?php echo $username?>" target="new" class="links"> Favoritos </a>
 			</li>
 			<li class="menu">
 				<a href="logout.php" class="links" id="id3"> Cerrar Sesi&oacute;n </a>
