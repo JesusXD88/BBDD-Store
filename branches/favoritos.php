@@ -21,11 +21,14 @@
 <html>
 <head>
     <title> Favoritos </title>
-    <link rel="stylesheet" type="text/css" href="../css/designcarrito.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/designfavoritos.css"/>
 </head>
 <body>
     <div class="header">
-        <h1> Favoritos </h1>
+        <h1> 
+            <img src="../media/images/star-outline(1).png" class="star"/> 
+            Favoritos 
+        </h1>
     </div>
     <div class="tab">
         <table>
@@ -87,6 +90,23 @@
                     </tr>";
             ?>
         </table>
+    </div>
+    <div>
+        <br>
+        <br>
+        <footer>
+            <ul class="ulu">
+                <li class="uli">
+                    <form action='dashboard.php'>
+                        <input type='hidden' name='username' value=<?php echo $username?>>
+                        <button class="button button1">
+                            <img src="../media/images/home-circle-outline.png"  class="im" />
+                            Volver al Dashboard
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </footer> 
     </div>
 </body>
 </html>

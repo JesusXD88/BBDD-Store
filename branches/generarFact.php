@@ -22,7 +22,9 @@
     $precio = $_GET['precio'];
     $cantidad = $_GET['cantidad'];
     $transportista = $_GET['transportista'];
-    $direccion = $_GET['direccion'];
+    $direccionCa = $_GET['direccionCa'];
+    $direccionN = $_GET['direccionN'];
+    $direccionCi = $_GET['direccionCi'];
     $totalPagado = $_GET['precioTotal'];
     
     
@@ -31,10 +33,14 @@
         echo $cabezera;
         $producto = "Producto:&emsp;&emsp;&emsp;&emsp;&emsp;$nombre<br>Descripcion:&emsp;&emsp;&emsp;&emsp;&emsp;$descripcion<br>Fabricante:&emsp;&emsp;&emsp;&emsp;&emsp;$fabricante<br>Precio:&emsp;&emsp;&emsp;&emsp;&emsp;$precio €<br>Cantidad:&emsp;&emsp;&emsp;&emsp;&emsp;$cantidad<br><br>Transportista:&emsp;&emsp;&emsp;&emsp;&emsp;$transportista<br><br>";
         echo $producto;
-        $userdata = "Cliente:&emsp;&emsp;&emsp;&emsp;&emsp;$username<br><br>Dirección de envío:$direccion<br><br>";
+        $userdata = "Cliente:&emsp;&emsp;&emsp;&emsp;&emsp;$username<br><br>Dirección de envío:&emsp;&emsp;&emsp;&emsp;&emsp;$direccionCa $direccionN, $direccionCi<br><br>";
         echo $userdata;
         $totalCompra = "------------------Total A Pagar------------------<br><br>PvP:&emsp;&emsp;&emsp;&emsp;&emsp;$totalPagado €";
         echo $totalCompra;
+        echo "<script>
+                window.open('carrito.php?username=$username', '_newtab')
+                </script>
+            ";
     } else {
         header("Location:carrito.php?username=$username");
     }

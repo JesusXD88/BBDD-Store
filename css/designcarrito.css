@@ -19,8 +19,12 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
+body {
+    background-image: url("../media/images/1920x10802.jpg");
+}
+
 .header {
-    background-color: #9933cc;
+    background-color: #448afd;
     color: #ffffff;
     padding: 15px;
 }
@@ -51,4 +55,54 @@ th {
     display: flex;
     justify-content: center;
     margin: 100px 0px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+    position: relative;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  margin: 10px 200px;
+  left: 200px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.im {
+    width: 27px;
+    position: relative;
+    top: 7px;
+}
+
+.ulu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.uli {
+  float: left;
+}
+
+.car {
+    position: relative;
+    width: 36px;
+    top: 5px;
 }

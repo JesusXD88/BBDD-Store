@@ -20,13 +20,13 @@ html {
 }
 
 .header {
-    background-color: #1db049;
+    background-color: #e91d63;
     color: #ffffff;
     padding: 15px;
 }
 
 body {
-    background-image: url("../media/images/3.jpg");
+    background-image: url("../media/images/ocean_aerial_view_bungalow_140098_1920x1080.jpg");
 }
 
 table, th, td {
@@ -57,10 +57,6 @@ th {
     margin: 100px 0px;
 }
 
-.relleno {
-    padding: 16px;
-}
-
 .button {
   border: none;
   color: white;
@@ -88,18 +84,6 @@ th {
   color: white;
 }
 
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #da0f7a;
-  margin: 10px 40px;
-}
-
-.button2:hover {
-  background-color: #da0f7a;
-  color: white;
-}
-
 .im {
     width: 27px;
     position: relative;
@@ -117,7 +101,7 @@ th {
   float: left;
 }
 
-.comp {
+.star {
     position: relative;
     width: 36px;
     top: 5px;

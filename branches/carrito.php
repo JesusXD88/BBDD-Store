@@ -25,7 +25,10 @@
 </head>
 <body>
     <div class="header">
-        <h1> Mi Carrito </h1>
+        <h1> 
+            <img src="../media/images/cart-outline(1).png" class="car"/> 
+            Mi Carrito 
+        </h1>
     </div>
     <div class="tab">
         <table>
@@ -92,6 +95,23 @@
                     </tr>";
             ?>
         </table>
+    </div>
+    <div>
+        <br>
+        <br>
+        <footer>
+            <ul class="ulu">
+                <li class="uli">
+                    <form action='dashboard.php'>
+                        <input type='hidden' name='username' value=<?php echo $username?>>
+                        <button class="button button1">
+                            <img src="../media/images/home-circle-outline.png"  class="im" />
+                            Volver al Dashboard
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </footer> 
     </div>
 </body>
 </html>

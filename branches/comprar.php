@@ -27,7 +27,10 @@
 </head>
 <body>
     <div class="header">
-        <h1> Comprar </h1>
+        <h1>
+            <img src="../media/images/basket-outline(1).png" class="comp" /> 
+            Comprar 
+        </h1>
     </div>
     <div class="tab">
         <table>
@@ -100,6 +103,32 @@
                 <td colspan="8" class="relleno"> </td>
             </tr>
         </table>
+    </div>
+    <div>
+        <br>
+        <br>
+        <footer>
+            <ul class="ulu">
+                <li class="uli">
+                    <form action='dashboard.php'>
+                        <input type='hidden' name='username' value=<?php echo $username?>>
+                        <button class="button button1">
+                            <img src="../media/images/home-circle-outline.png"  class="im" />
+                            Ir al Dashboard
+                        </button>
+                    </form>
+                </li>
+                <li class="uli">
+                    <form action='carrito.php'>
+                        <input type='hidden' name='username' value=<?php echo $username?>>
+                        <button class="button button2">
+                            <img src="../media/images/cart.png" class="im" />
+                            Volver al Carrito
+                            </button>
+                    </form>
+                </li>
+            </ul>
+        </footer> 
     </div>
 </body>
 </html>

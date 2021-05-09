@@ -60,6 +60,8 @@
             $seHaInsertadoProdCompra = mysqli_affected_rows($mysqli);
             if ($seHaInsertadoProdCompra == 1) {
                 $query5 = mysqli_query($mysqli, "delete from `Productos del Carrito` where Cliente_Login='$username' and Productos_Codigo=$producto");
+                $query6 = mysqli_query($mysqli, "select * from Direccion where idDireccion=$direccion");
+                $row2 = mysqli_fetch_object($query6);
                 echo "<form action='generarFact.php'>
                             <input type='hidden' name='confirmacionFact' id='conf'>
                             <input type='hidden' name='username' value='$username'>
@@ -68,7 +70,9 @@
                             <input type='hidden' name='fabricante' value=$row->Fabricante>
                             <input type='hidden' name='precio' value=$row->Precio>
                             <input type='hidden' name='cantidad' value=$cantidad>
-                            <input type='hidden' name='direccion' value=$direccion>
+                            <input type='hidden' name='direccionCa' value=$row2->Calle>
+                            <input type='hidden' name='direccionN' value=$row2->Numero>
+                            <input type='hidden' name='direccionCi' value=$row2->Ciudad>
                             <input type='hidden' name='transportista' value='$transporte'>
                             <input type='hidden' name='precioTotal' value=$totalCompra>
                         </input>
