@@ -324,3 +324,9 @@ th {
 .uli {
   float: left;
 }
+
+.cata {
+    position: relative;
+    width: 36px;
+    top: 5px;
+}

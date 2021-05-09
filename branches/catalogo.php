@@ -28,7 +28,10 @@
 </head>
 <body>
 <div class="header">
-    <h1> Cat&aacute;logo </h1>
+    <h1>
+        <img src="../media/images/magnify.png" class="cata" /> 
+        Cat&aacute;logo
+    </h1>
 </div>
 <div class="row">
   <div class="col-3 col-s-3 menu">

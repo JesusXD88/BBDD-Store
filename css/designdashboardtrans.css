@@ -1,0 +1,129 @@
+/*
+	BBDD-Store
+    Copyright (C) 2021  JesusXD88
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@charset "utf8";
+
+/* CSS Document */
+
+h1 {
+	text-align: center;
+	font-family: "Arial Rounded MT Bold", sans-serif;
+	font-size: 40px;
+	color: Red;
+	background-color: rgba(255,255,255,0.7);
+	padding:10px 5px 10px 5px;
+}
+
+body {
+	background-image: url("../media/images/10f.jpg");
+	background-size: auto;
+	align-items: center;
+}
+
+.menu {
+	display: inline;
+	float: left;
+}
+
+.links {
+	display: block inline;
+	color: white;
+	padding:14px 16px;
+	text-decoration: none;
+}
+
+.menubar{
+    position: relative;
+	list-style-type: none;
+	margin: 3;
+	padding: 0;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li a:hover {
+	background-color: #111;
+     cursor: pointer;
+}
+
+#id3 {
+	background-color: #33cc33; 
+    position: absolute;
+    top: 0%;
+    right: 30px;
+}
+
+#id1 {
+    margin: 46px;
+	text-align: center;
+	font-family: Calibri, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+}
+
+#id2 {
+	text-align: center;
+	font-family: Calibri, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+}
+
+ul {
+	text-align:center;
+	font-size: medium;
+	font-family: Calibri, sans-serif;
+	font-size: 23px;
+	list-style-image: url(../media/images/right-arrow2.png) ; 
+}
+
+li {
+	padding: 0px 10px 0px 10px;
+}
+.fondo {
+	background-color: rgba(255,255,255,0.7);
+	padding:10px 5px 10px 5px;
+}
+
+.subnav-content {
+    background-color: #111;
+    display: none;
+    position: relative;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.lnk {
+    text-align: left;
+}
+
+.subnav-content a:hover {
+    background-color: #da0f7a;
+    cursor: pointer;
+}
+
+.menu:hover .subnav-content {
+  display: block;
+}

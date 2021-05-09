@@ -1,0 +1,174 @@
+/*
+	BBDD-Store
+    Copyright (C) 2021  JesusXD88
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+@charset="utf8";
+
+h1 {
+	font-family: "Comfortaa", sans-serif;
+	text-align: center;
+	font-size: 40px;
+	background-color: rgba(255,255,255,0.6) ;
+	color: rgba(255, 33, 124, 1);
+}
+
+body {
+	background-image: url(../media/images/02a.jpg);
+	background-size: auto;
+	align-items: center;
+}
+
+.menu-content {
+	max-height: 0;
+	overflow:hidden;
+	font-family: Calibri, sans-serif;
+	font-size: 20px;
+	padding: 0 0 0 50px;
+}
+
+.login {
+    padding:0 30px;
+	#border-bottom:3px solid #CDE700;
+	box-shadow:1px 2px 3px rgba (0,0,0,0.2);
+	background-color: rgba(255,255,255,0.6);
+}
+
+input#Jesussify {
+	display: none;
+}
+
+input#Minijuegos_jesus {
+	display: none;
+}
+
+input#Utilidades {
+	display: none;
+}
+
+input:checked +label {
+	background-image: url(../media/images/close.png);
+	background-size: 30px;
+}
+
+/* Para descargarse los iconos, bajarselos de aqui http://www.flaticon.com/ */
+
+/* Para que funcione el efecto de contraccion-expansion del menu */
+
+input:checked ~ label {
+	background-image: url(../media/images/close.png); 
+}
+
+input:checked ~ .menu-content {
+	max-height: 100%;
+}
+
+.parrafo {
+	color: rgba(218, 15, 122, 1);
+	font-family: Calibri,sans-serif;
+	font-size: 27px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	#outline-style: solid;
+	#outline-color: Red;
+}
+
+#id2 {
+	background-color: rgba(255,255,255,0.6);
+}
+
+#id3 {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.con_bd {
+    color: rgba(218, 15, 122, 1);
+	font-family: Calibri,sans-serif;
+	font-size: 27px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	#outline-style: solid;
+	#outline-color: Red;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+}
+
+input {
+    border: 2px solid #ccc;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: 'Comfortaa';
+    padding: 10px;
+}
+
+.forma {
+    margin: 25px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    width: 500px;
+    background: #eee;
+}
+
+div.form-element {
+    margin: 20px 0;
+    position: relative;
+    left: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa';
+    font-weight: 100;
+    background: yellowgreen;
+    color: white;
+    border: none;
+    position: relative;
+    left: 1.5%;
+}
+
+.imagen {
+    width: 12%;
+    position: relative;
+    top: 2px;
+}
+
+.bd {
+    width: 1.5%;
+    position: relative;
+    top: 4px;
+}
+
+.acc {
+    width: 18%;
+    position: relative;
+    top: 4px;
+    right: 2%;
+}
+
+.pass {
+    width: 18%;
+    position: relative;
+    top: 4px;
+    right: 4%;
+}
+
+.box {
+    position: relative;
+    left: 5%;
+}

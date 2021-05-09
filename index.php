@@ -40,7 +40,7 @@
 	</div>
 	<div>
 		<div>
-            <form action="branches/login.php" method="post" name="signin-form">
+            <form action="branches/login.php" method="post" name="signin-form" class="forma">
                 <div class="form-element">
                     <label>
                         <img src="media/images/account-circle-outline.png" class="acc"/>Usuario</label>
@@ -53,14 +53,23 @@
                 </div>
                 <button type="submit" name="login" value="login">
                     <img src="media/images/arrow-right-circle-outline4.png" class="imagen"/>
-                    Iniciar sesion
+                    Iniciar sesi&oacute;n
                 </button>
             </form>
 		</div>
 	</div>
 	<br>
     <br>
+    <p class="parrafo" charset="UTF-8">
+            ¿Trabajas en una empresa de transporte?
+    </p>
     <br>
+    <form action="branches/loginTransporte.php" method="post" name="signin-form2">
+        <button type="submit" name="loginTran" value="loginTran" class="btn">
+                    <img src="media/images/arrow-right-circle-outline4.png" class="imagen"/>
+                    Inicia sesi&oacute;n aqu&iacute;
+        </button>
+    </form>
     <br>
     <br>
     <br>
