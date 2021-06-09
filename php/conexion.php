@@ -16,10 +16,10 @@
 <?php
                         /* Inicio del Script PHP */
                         
-$host = 'localhost:3306';
+$host = 'localhost';
 $username = 'root';
-$password = '';
-$database = 'Practica03';
+$password = 'root';
+$database = 'DiegoJesusBerenguelGarcia';
 
 // Creamos la conexion
 
