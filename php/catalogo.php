@@ -63,7 +63,8 @@
   <div class="col-6 col-s-9 co">
     <h1 class="cate">Productos</h1>
     <p class="cate2"> 
-     Selecciona una categoría y a continuación se mostrar&aacute;n sus productos. <br> Para a&ntilde;adir al carrito, introduce una cantidad y pulsa a a&ntilde;adir al carrito.</p>
+     Sitúa el cursor sobre el panel de secciones y automáticamente se abrirá un desplegable con sus categorías. 
+     <br>Selecciona una categoría y a continuación se mostrar&aacute;n sus productos. <br> Para a&ntilde;adir al carrito, introduce una cantidad y pulsa a a&ntilde;adir al carrito.</p>
      <br>
     <p class="cate3">&emsp;&emsp;Categor&iacute;a: 
         <?php 

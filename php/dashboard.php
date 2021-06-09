@@ -31,7 +31,7 @@
     <nav>
 		<ul class="menubar">
 			<li class="menu">
-                <a href="catalogo.php?username=<?php echo $username?>" class="links" target="new"> Cat&aacute;logo </a>
+                <a href="catalogo.php?username=<?php echo $username?>&categoria=1" class="links" target="new"> Cat&aacute;logo </a>
 			</li>
             <li class="menu">
 				<a href="carrito.php?username=<?php echo $username?>" target="new" class="links"> Mi Carrito </a>
