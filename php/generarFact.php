@@ -31,11 +31,15 @@
     if ($confirmacionFact == "true") {
         $cabezera = "-----------Factura tienda BBDD-Store-----------<br><br>";
         echo $cabezera;
-        $producto = "Producto:&emsp;&emsp;&emsp;&emsp;&emsp;$nombre<br>Descripcion:&emsp;&emsp;&emsp;&emsp;&emsp;$descripcion<br>Fabricante:&emsp;&emsp;&emsp;&emsp;&emsp;$fabricante<br>Precio:&emsp;&emsp;&emsp;&emsp;&emsp;$precio €<br>Cantidad:&emsp;&emsp;&emsp;&emsp;&emsp;$cantidad<br><br>Transportista:&emsp;&emsp;&emsp;&emsp;&emsp;$transportista<br><br>";
+        $tabla = "<table><tr><th></th><th></th></tr>";
+        echo $tabla;
+        $producto = "<tr><td>Producto:&emsp;&emsp;</td><td>$nombre</td></tr><tr><td>Descripcion:&emsp;&emsp;</td><td>$descripcion</td></tr><tr><td>Fabricante:&emsp;&emsp;</td><td>$fabricante</td></tr><tr><td>Precio:&emsp;&emsp;</td><td>$precio €</td></tr><tr><td>Cantidad:&emsp;&emsp;</td><td>$cantidad</td></tr><tr><td>Transportista:&emsp;&emsp;</td><td>$transportista</td></tr>";
         echo $producto;
-        $userdata = "Cliente:&emsp;&emsp;&emsp;&emsp;&emsp;$username<br><br>Dirección de envío:&emsp;&emsp;&emsp;&emsp;&emsp;$direccionCa $direccionN, $direccionCi<br><br>";
+        $userdata = "<tr><td>Cliente:&emsp;&emsp;</td><td>$username</td></tr><tr><td>Dirección de envío:&emsp;&emsp;</td><td>$direccionCa $direccionN, $direccionCi</td></tr>";
         echo $userdata;
-        $totalCompra = "------------------Total A Pagar------------------<br><br>PvP:&emsp;&emsp;&emsp;&emsp;&emsp;$totalPagado €";
+        $tablac = "</table><br>";
+        echo $tablac;
+        $totalCompra = "------------------Total A Pagar------------------<br><br><table><tr><td>PvP:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td><td>$totalPagado €</td></tr></table>";
         echo $totalCompra;
         echo "<script>
                 window.open('carrito.php?username=$username', '_newtab')
