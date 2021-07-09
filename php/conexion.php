@@ -18,8 +18,8 @@
                         
 $host = 'localhost';
 $username = 'root';
-$password = 'root';
-$database = 'DiegoJesusBerenguelGarcia';
+$password = '';
+$database = 'BBDD-DB';
 
 // Creamos la conexion
 

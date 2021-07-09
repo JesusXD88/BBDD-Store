@@ -2,20 +2,37 @@
 
 Desarrollado por JesusXD88.
 
+Versión Final.
+
 ## Descripcion
 
 Este proyecto consiste en el desarrollo de una página web diseñada en PHP, HTML y CSS para el desarrollo de una práctica de una asignatura de la universidad.
 
 La implementación de este proyecto ha sido diseñada totalmente desde cero por mí y gracias a la información que ido pudiendo encontrar por internet.
 
+Práctica calificada con un **9.3/10**.
+
 ## Uso
 
 1. Cargar e importar la base de datos almacenada en la carpeta db. Importar con cualquier sistema basado en MySQL / MariaDB como MySQL Workbench o PHPMyAdmin.
 2. Situar la carpeta del proyecto en una carpeta accesible por el servidor PHP como puede ser Apache (clonar el repo o descomprimir el zip descargado en dicha carpeta, normalmente suele ser htdocs). Todos los archivos de la raíz del proyecto han de estar bajo el mismo directorio.
-3. Encender el servidor PHP como Apache.
-4. Abrir a un navegador web y acceder a una ruta parecida a la siguiente: localhost/BBDD-Store.
-5. Iniciar sesión con unas credenciales válidas almacenadas en la Base de Datos.
-6. Enjoy!
+3. Encender el servidor PHP como por ejemplo Apache.
+4. Configurar en el archivo conexion.php dentro de la carpeta php el username y el password del server MySQL. Por defecto es usuario='root' y contraseña='', pero a la hora de realizar la entrega había que configurarlo como contraseña='root'.
+5. Abrir a un navegador web y acceder a una ruta parecida a la siguiente: localhost/BBDD-Store.
+6. Iniciar sesión con unas credenciales válidas almacenadas en la Base de Datos.
+7. Enjoy!
+
+## Capturas de pantalla
+
+![alt text](media/screenshots/Captura de pantalla-20210709145554-1920x1080.png "Login como un cliente de la página")
+
+![alt text](media/screenshots/Captura de pantalla-20210709150106-1920x1080.png "Dashboard")
+
+![alt text](media/screenshots/Captura de pantalla-20210709145755-1920x1080.png "Catálogo")
+
+![alt text](media/screenshots/Captura de pantalla-20210709150455-1920x1080.png "Login como el personal de una empresa")
+
+![alt text](media/screenshots/Captura de pantalla-20210709145952-1920x1080.png "Visualización de las compras por parte de una empresa")
 
 ## Explicación de las estructura de archivos
 
