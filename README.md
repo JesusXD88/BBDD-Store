@@ -24,15 +24,16 @@ Práctica calificada con un **9.3/10**.
 
 ## Capturas de pantalla
 
-![alt text](media/screenshots/Captura de pantalla-20210709145554-1920x1080.png "Login como un cliente de la página")
+![alt text](https://github.com/JesusXD88/BBDD-Store/blob/main/media/screenshots/Captura%20de%20pantalla-20210709150106-1920x1080.png?raw=true "Login como un cliente de la página")
 
-![alt text](media/screenshots/Captura de pantalla-20210709150106-1920x1080.png "Dashboard")
+![alt text](https://github.com/JesusXD88/BBDD-Store/blob/main/media/screenshots/Captura%20de%20pantalla-20210709150106-1920x1080.png?raw=true "Dashboard")
 
-![alt text](media/screenshots/Captura de pantalla-20210709145755-1920x1080.png "Catálogo")
+![alt text](https://github.com/JesusXD88/BBDD-Store/blob/main/media/screenshots/Captura%20de%20pantalla-20210709145755-1920x1080.png?raw=true "Catálogo")
 
-![alt text](media/screenshots/Captura de pantalla-20210709150455-1920x1080.png "Login como el personal de una empresa")
+![alt text](https://github.com/JesusXD88/BBDD-Store/blob/main/media/screenshots/Captura%20de%20pantalla-20210709150455-1920x1080.png?raw=true "Login como el personal de una empresa")
 
-![alt text](media/screenshots/Captura de pantalla-20210709145952-1920x1080.png "Visualización de las compras por parte de una empresa")
+![alt text](https://github.com/JesusXD88/BBDD-Store/blob/main/media/screenshots/Captura%20de%20pantalla-20210709145952-1920x1080.png?raw=true "Visualización de las compras por parte de una empresa")
+
 
 ## Explicación de las estructura de archivos
 
